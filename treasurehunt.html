@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link type="text/css" rel="stylesheet" href="treasure.css"/>
+    <script type="text/javascript" src="treasure.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <!--jumbotron-->
+          <div class="container" id="block">
+            <div class="jumbotron">
+              <h1>Treasure Hunt</h1>
+            </div>
+          </div><!--end jumbotron-->
+        </div><!--end column-->
+      </div><!--end row-->
+      <div class="row">
+        <div class="col-sm-3">
+        </div>
+        <div class="col-sm-6">
+          <table align=center>
+            <tr>
+               <td id="0" onclick="checkPosition(0)">?</td>
+               <td id="1" onclick="checkPosition(1)">?</td>
+               <td id="2" onclick="checkPosition(2)">?</td>
+             </tr>
+             <tr>
+               <td id="3" onclick="checkPosition(3)">?</td>
+               <td id="4" onclick="checkPosition(4)">?</td>
+               <td id="5" onclick="checkPosition(5)">?</td>
+             </tr>
+             <tr>
+               <td id="6" onclick="checkPosition(6)">?</td>
+               <td id="7" onclick="checkPosition(7)">?</td>
+               <td id="8" onclick="checkPosition(8)">?</td>
+             </tr>
+           </table>
+         </div><!--end column-->
+         <div class="col-sm-3">
+         </div><!--end column-->
+       </div><!--end row-->
+       <div class="row">
+         <div class="col-sm-6" id="clicks">
+           <h2 id="clicks">Clicks remaining:</h2>
+         </div><!--end column-->
+         <div class="col-sm-6">
+           <h2 id="counter">9</h2>
+         </div><!--end column-->
+       </div><!--close row-->
+  </body>
+</html>
